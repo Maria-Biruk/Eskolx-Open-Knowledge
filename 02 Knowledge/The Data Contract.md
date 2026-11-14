@@ -52,10 +52,10 @@ Data `[4, 1, None, 9, nan, 6]`: six items, two missing (positions 2 and 4), four
 
 ## In my own words: what I took from the sources
 
-- [[Ross — Introduction to Probability and Statistics]], Ch. 1: _(write 2 to 3 sentences in your own words)_
-- Tukey (1962): _(your words: what the argument is and how it shapes this contract)_
-- Rubin (1976), sections 1 to 3: _(your words: MCAR, MAR, MNAR and why drop is a claim)_
-- Box (1976): _(your words: a model is an approximation, and the check belongs inside the method)_
+- [[Ross — Introduction to Probability and Statistics]], Ch. 1: Statistics is about learning about a whole group (the population) from a smaller part of it (the sample). How the data was collected decides what we can trust. A data contract only protects the numbers we were given. It cannot tell us whether the sample represents the population.
+- Tukey (1962):  Data analysis is its own science, not only maths. Exploring data and confirming a claim are different jobs, and computing is part of the method. In this package the checks run inside the functions.
+- Rubin (1976), sections 1 to 3: Missing values have a reason. MCAR means they are missing completely at random. MAR means missingness depends on data we can see. MNAR means it depends on the missing value itself. Dropping values is only safe under MCAR, so the audit records that assumption.
+- Box (1976): Missing values have a reason. MCAR means they are missing completely at random. MAR means missingness depends on data we can see. MNAR means it depends on the missing value itself. Dropping values is only safe under MCAR, so the audit records that assumption.
 
 ## Related notes
 
