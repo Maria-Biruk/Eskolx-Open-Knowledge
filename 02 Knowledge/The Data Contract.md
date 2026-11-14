@@ -14,6 +14,9 @@ publish-status: draft
 
 A data contract is the written promise a function makes about what it will accept, what it will refuse, and what it will do when a value is missing. Every rule below is a test in `tests/test_contract.py`, and every refusal raises a named error, so a person who was not in the room can trust the number that comes out.
 
+## The path of a value
+![[The Data Contract Diagram]]
+
 The contract exists because the check belongs inside the method, not after it (see [[Box (1976) — Science and Statistics]] and [[Tukey (1962) — The Future of Data Analysis]]. A function that quietly repairs bad input produces a number nobody can defend.
 
 ## The rules
